@@ -1,0 +1,23 @@
+
+from PIL import Image
+import sys
+
+print("**********************************")
+print("* Buscador de Archivos Corruptos *")
+print("**********************************\n")
+
+try:
+    img = Image.open("D:/Users/Play Electrónica/Desktop/Imagenes/IMG_20210930_112616897.jpg")
+    
+except:
+    print("No se puede abrir el archivo:IMG_20210930_112616897.jpg")
+    sys.exit(1)
+img.show()
+
+try:
+    img2 = Image.open("D:/Users/Play Electrónica/Desktop/Imagenes/pc escritorio2.jpg")
+    
+except:
+    print("No se puede abrir el archivo:pc escritorio2.jpg")
+    sys.exit(1)
+img.show()
