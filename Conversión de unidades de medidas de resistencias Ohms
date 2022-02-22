@@ -1,0 +1,40 @@
+print("*****************************************************")
+print("* Conversión de unidades de medidas de resistencias *")
+print("*****************************************************\n")
+
+print("Seleccione una opcion: \n")
+
+print("Opcion 1: mili Ohm a Ohm")
+print("Opcion 2: Kilo Ohm a Ohm")
+print("Opcion 3: Mega Ohm a Kilo Ohm")
+print("Opcion 4: Ohm a Mili Ohm")
+print("opcion 5: Ohm a Kilo Ohm")
+print("opcion 6: Kilo Ohm a Mega Ohm \n")
+
+opcion=int(input("Ingrese un numero de opcion: "))
+numero=float(input("Escriba el numeo a onvertir: "))
+print("\n")
+
+if opcion== 1:
+    print("Ha seleccionado la opcion 1: mili Ohm a Ohm")
+    print("El resultado de la conversion es:", numero/1000 ,"Ohm")
+
+if opcion== 2:
+    print("Ha seleccionado la opcion 2: Kilo Ohm a Ohm")
+    print("El resultado de la conversion es:", numero*1000 ,"Ohm")
+
+if opcion== 3:
+    print("Ha seleccionado la opcion 3: Mega Ohm a Kilo Ohm")
+    print("El resultado de la conversion es:",numero*1000, "Kilo Ohm")
+   
+if opcion== 4:
+    print("Ha seleccionado la opcion 4: Ohm a Mili Ohm")
+    print("El resultado de la conversion es:",numero*1000, "Mili Ohm")
+
+if opcion== 5:
+    print("Ha seleccionado la opcion 5: Ohm a Kilo Ohm")
+    print("El resultado de la conversion es:",numero/1000, "Kilo Ohm")
+
+if opcion== 6:
+    print("Ha seleccionado la opcion 6: Kilo Ohm a Mega Ohm")
+    print("El resultado de la conversion es:",numero/1000, "Mega Ohm")
