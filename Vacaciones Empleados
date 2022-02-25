@@ -1,0 +1,50 @@
+"""Administracion (clave A)
+6 meses, 7 dias de vacaciones
+12 neses, 14 dias de vacaciones
+60 meses, 21 dias de vacaciones
+Atencion a clientes (clave B)
+12 meses, 14 dias de vacaciones
+60 meses, 21 dias de vacaciones
+Gerencia (clave C)
+6 meses 10 dias de vacaciones
+12 meses, 18 dias de vacaciones
+60 meses, 28 dias de vacaciones
+Solicitar Nombre, clave y antiguedad
+mostrar Nombre de trabajador y dias de vacaciones."""
+
+
+
+nombre= input("Ingrese su Nombre: ")
+clave= input("Ingrese la clave: ")
+antiguedad= int (input("¿cuantos meses tiene de trabajo?: "))
+
+if clave == "a":
+    if antiguedad >=6 and antiguedad <12:
+        print("Hola", nombre, "te corresponden 7 dias de vacaciones.")
+    elif antiguedad >= 12 and antiguedad <60:
+        print("Hola", nombre, "te corresponden  14 dias de vacaciones.")
+    elif antiguedad >= 60:
+        print("Hola", nombre, "te corresponden  21 dias de vacaciones.")
+    else:
+        print("Hola ", nombre, " no te corresponden  vacaciones.")
+
+elif clave == "b":
+    if antiguedad >= 12 and antiguedad <60:
+        print("Hola", nombre, "te corresponden 14 dias de vacaciones.")
+    elif antiguedad >= 60:
+        print("Hola", nombre, "te corresponden 21 dias de vacaciones.")    
+    else:
+        print("Hola", nombre, " no te corresponden  vacaciones.")
+
+elif clave == "c":
+    if antiguedad >=6 and antiguedad <12:
+        print("Hola", nombre, "te corresponden 10 dias de vacaciones.")
+    elif antiguedad >= 12 and antiguedad <60:
+        print("Hola", nombre, "te corresponden 18 dias de vacaciones.")
+    elif antiguedad >= 60:
+        print("Hola", nombre, "te corresponden 28 dias de vacaciones.")
+    else:
+        print("Hola", nombre, "no te corresponden  vacaciones.")
+
+else:
+    print("La clave ingresada es incorrecta.")     
